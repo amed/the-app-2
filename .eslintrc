@@ -1,0 +1,25 @@
+{
+  "globals": {
+    "alert"
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "standard"],
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    react/prop-types: 0,
+    no-console: [
+    "error", { allow: ["log", "info", "warn", "error", "ignoredYellowBox"] }
+    ]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
